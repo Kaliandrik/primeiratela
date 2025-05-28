@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>UniHelp</title>
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
@@ -25,11 +24,14 @@
       <a href="#">Redes Sociais</a>
       <a href="#">Central de Ajuda</a> <br> <br> <br>
       <div class="perfil-container">
-        <img id="perfil" src="img/perfil.png" alt="Perfil" />
+        <a href="">
+          <img id="perfil" src="img/perfil.png" alt="Perfil" />
+        </a>
         <p>Seu perfil</p>
       </div>
     </nav>
   </header>
+
 
   <!-- HERO -->
   <section class="hero">
@@ -41,36 +43,146 @@
     <img src="img/foto1_idosa.avif" alt="Pessoa em cadeira de rodas com profissional de saúde" />
   </section>
 
+
+<br> <br> <br>
+
+
+
+
+
+
+
+
   <!-- FORMULÁRIO -->
-  <section class="form-container">
-    <h2>Preencha suas informações</h2>
-    <form>
-      <div class="form-row">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="form-row">
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" />
-        <label for="sexo">Sexo:</label>
-        <select id="sexo" name="sexo">
-          <option value="">Selecione</option>
-          <option value="masculino">Masculino</option>
-          <option value="feminino">Feminino</option>
-          <option value="outro">Outro</option>
+
+
+
+
+
+
+
+
+  <div class="form-box">
+    <h1>Consulta Médica</h1>
+    <div class="form-content">
+      <div class="coluna">
+        <h2>Especialidades<br>Disponíveis</h2>
+        <select name="especialidade" id="especialidade" class="select-especialidade">
+          <option value="" disabled selected>Selecione uma especialidade</option>
+          <option value="clinico">👨‍⚕️ Clínico Geral</option>
+          <option value="psicologo">🧠 Psicólogo</option>
+          <option value="fisioterapeuta">🦴 Fisioterapeuta</option>
+          <option value="neurologista">🧬 Neurologista</option>
+          <option value="ortopedista">🦵 Ortopedista</option>
         </select>
+        <br> <br><br> <br> <br>
+        <div class="historico">
+          <h3>Histórico de Consultas</h3>
+          <ul>
+            <li>12/03/2025 - Ortopedista - <span class="presencial">Presencial</span></li>
+            <li>04/02/2025 - Psicólogo - <span class="online">Online</span></li>
+            <li>09/04/2025 - Clínico Geral - <span class="presencial">Presencial</span></li>
+          </ul>
+          <button class="vermais">Ver mais</button>
+        </div>
       </div>
-      <div class="buttons">
-        <button type="submit" class="submit">Enviar</button>
-        <button type="reset" class="clear">Limpar</button>
+
+
+
+
+
+
+
+
+      <div class="coluna">
+        <h2>Agendar Consulta</h2>
+        <form>
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" placeholder="Ex: João Pedro da Silva">
+
+
+
+
+
+
+
+
+         <label for="data">Data</label>
+        <input type="date" id="data" name="data" class="input-data">
+
+
+
+
+
+
+
+
+          <label for="hora">Horários disponíveis</label>
+            <select id="hora" name="hora" class="select-horario">
+              <option value="" disabled selected>Selecione o horário</option>
+              <option value="09:00">09:00 - AM</option>
+              <option value="09:30">09:30 - AM</option>
+              <option value="10:00">10:00 - AM</option>
+              <option value="10:30">10:30 - AM</option>
+              <option value="14:00">14:00 - PM</option>
+              <option value="14:30">14:30 - PM</option>
+              <option value="15:00">15:00 - PM</option>
+            </select>
+
+
+
+
+
+
+
+          <label for="tipo">Tipo de consulta</label>
+          <select id="tipo">
+            <option value="online">Online</option>
+            <option value="presencial">Presencial</option>
+          </select>
+
+
+
+
+
+
+
+
+          <div class="botoes">
+            <button type="submit" class="agendar">Agendar</button> <br>
+            <button type="reset" class="limpar">Limpar</button>
+          </div>
+        </form>
       </div>
-    </form>
-    <div class="history">
-      <p>Histórico de envios aparecerá aqui (exemplo).</p>
     </div>
-  </section>
+  </div>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- RODAPÉ -->
   <footer class="footer">
@@ -88,6 +200,13 @@
         </p>
       </div>
 
+
+
+
+
+
+
+
       <div class="footer-column">
         <h3>Suporte</h3>
         <ul>
@@ -99,6 +218,13 @@
         </ul>
       </div>
 
+
+
+
+
+
+
+
       <div class="footer-column">
         <h3>Informações úteis</h3>
         <ul>
@@ -109,6 +235,13 @@
           <li><a href="#">Blog / Notícias</a></li>
         </ul>
       </div>
+
+
+
+
+
+
+
 
       <div class="social">
         <h3>Siga-nos</h3>
@@ -124,3 +257,11 @@
   </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
